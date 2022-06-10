@@ -7,11 +7,11 @@ function startClock() {
     let month   = today.getMonth();
     let year    = today.getFullYear();
 
-    hour   = padItem(hour - 12);
-    minute = padItem(minute);
-    second = padItem(second);
-    day    = padItem(day);
-    month  = padItem(month);
+    hour   = padNum(hour - 12);
+    minute = padNum(minute);
+    second = padNum(second);
+    day    = padNum(day);
+    month  = padNum(month);
     year   = year - 2000;
 
     document.getElementById("clockTime").innerHTML = hour + "." + minute + "." + second;
@@ -19,7 +19,7 @@ function startClock() {
     setTimeout(startClock, 1000);
 }
 
-function padItem(item) {
-    if (item < 10) item = "0" + item;
-    return item;
+function padNum(num) {
+    if (num < 10) num = "0" + num;
+    return num;
 }
