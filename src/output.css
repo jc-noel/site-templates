@@ -825,6 +825,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 300ms;
 }
 
+.styled-scrollbars {
+  /* Foreground, Background */
+  scrollbar-color: #e5c07b #dcdfe4;
+}
+
+.styled-scrollbars::-webkit-scrollbar {
+  width: 12px;
+  background-color: #dcdfe4;
+  /* Mostly for vertical scrollbars */
+}
+
+.styled-scrollbars::-webkit-scrollbar-thumb {
+  /* Foreground */
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background: #e5c07b;
+  border-radius: 10px;
+}
+
+.styled-scrollbars::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #dcdfe4;
+}
+
 .hover\:bg-gray-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
