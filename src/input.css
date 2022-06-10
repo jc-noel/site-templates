@@ -4,7 +4,7 @@
 
 .styled-scrollbars {
     /* Foreground, Background */
-    scrollbar-color: #e5c07b #FFF;
+    scrollbar-color: #e5c07b;
 }
 
 .styled-scrollbars::-webkit-scrollbar {
@@ -20,5 +20,4 @@
 
 .styled-scrollbars::-webkit-scrollbar-track {
     border-radius: 10px;
-    background-color: #FFF;
 }
