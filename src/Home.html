@@ -1,79 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>jcnoel.dev | Home</title>
-        <link rel="stylesheet" href="output.css">
-    </head>
-    <body class="flex h-screen flex-col items-center overflow-hidden">
-        <!-- This goes on every page (site-header) -->
-        <header class="h-14 w-full">
-            <!-- Site Navigation -->
-            <nav class="relative flex items-center justify-between border-b-2 border-black py-3 mx-4">
-                <div id="logo" class="font-bold">
-                    <a href="#">JCN</a>
-                </div>
-                <div class="menu">
-                    <div class="topBar my-1.5 h-0.5 w-7 bg-gray-800 duration-300"></div>
-                    <div class="midBar my-1.5 h-0.5 w-7 bg-gray-800"></div>
-                    <div class="lowBar my-1.5 h-0.5 w-7 bg-gray-800 duration-300"></div>
-                </div>
-                <!-- Mobile/Main Dropdown/Top Menu "toggle hidden class" -->
-                <ul class="links absolute top-14 hidden w-full flex-col text-right">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jcnoel.dev | Home</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="flex h-screen flex-col items-center overflow-hidden" onload="startClock()">
+    <!-- This goes on every page (site-header) -->
+    <header class="h-14 w-full">
+        <!-- Site Navigation -->
+        <nav class="relative flex items-center justify-between border-b-2 border-black py-3 mx-4">
+            <div id="logo" class="font-bold">
+                <a href="#">JCN</a>
+            </div>
+            <div class="menu">
+                <div class="topBar my-1.5 h-0.5 w-7 bg-gray-800 duration-300"></div>
+                <div class="midBar my-1.5 h-0.5 w-7 bg-gray-800"></div>
+                <div class="lowBar my-1.5 h-0.5 w-7 bg-gray-800 duration-300"></div>
+            </div>
+            <!-- Mobile/Main Dropdown/Top Menu "toggle hidden class" -->
+            <ul class="links absolute top-14 hidden w-full flex-col text-right">
+                <li>
+                    <a href="#" class="block p-5 hover:bg-gray-400">About</a>
+                </li>
+                <li>
+                    <a href="#" class="block p-5 hover:bg-gray-400">Blog</a>
+                </li>
+                <li>
+                    <a href="#" class="block p-5 hover:bg-gray-400">Works</a>
+                </li>
+                <li>
+                    <a href="#" class="block p-5 hover:bg-gray-400">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Site Navigation END -->
+
+        <!-- Profile Card: This only shows on homepage -->
+        <!-- Profile Card END -->
+    </header>
+
+    <!-- SAMPLE MAIN CONTENT -->
+    <main class="flex-1 overflow-y-scroll p-4">
+        <div class="min-h-screen">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quos dignissimos doloremque enim
+                necessitatibus accusamus dolorum aperiam, at tempora vel?</p>
+        </div>
+        <div class="min-h-screen">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quos dignissimos doloremque enim
+                necessitatibus accusamus dolorum aperiam, at tempora vel?</p>
+        </div>
+    </main>
+    <!-- SAMPLE MAIN CONTENT END -->
+
+    <!-- This goes on every page (site-footer) -->
+    <footer class="h-14 w-full">
+        <section class="relative flex items-center justify-between border-t-2 border-black py-3 mx-4">
+            <div id="dateTime" class="font-bold text-fuchsia-600">
+                <span id="clockDate" class="text-black">06.22.22</span> :: <span id="clockTime"
+                    class="text-black"></span> PM
+            </div>
+            <div>
+                <ul class="social-links w-full flex">
                     <li>
-                        <a href="#" class="block p-5 hover:bg-gray-400">About</a>
+                        <a href="#" class="block px-2 hover:bg-gray-400">
+                            <object data="img/icons/github-square-brands.svg" width="24" height="24"></object>
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="block p-5 hover:bg-gray-400">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block p-5 hover:bg-gray-400">Works</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block p-5 hover:bg-gray-400">Gallery</a>
+                        <a href="#" class="block px-2 hover:bg-gray-400">
+                            <object data="img/icons/linkedin-brands.svg" width="24" height="24"></object>
+                        </a>
                     </li>
                 </ul>
-            </nav>
-            <!-- Site Navigation END -->
-
-            <!-- Profile Card: This only shows on homepage -->
-            <!-- Profile Card END -->
-        </header>
-
-        <!-- SAMPLE MAIN CONTENT -->
-        <main class="flex-1 overflow-y-scroll p-4">
-            <div class="min-h-screen">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quos dignissimos doloremque enim necessitatibus accusamus dolorum aperiam, at tempora vel?</p>
             </div>
-            <div class="min-h-screen">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quos dignissimos doloremque enim necessitatibus accusamus dolorum aperiam, at tempora vel?</p>
-            </div>
-        </main>
-        <!-- SAMPLE MAIN CONTENT END -->
+        </section>
+    </footer>
+</body>
+<script src="js/mobile-menu.js"></script>
+<script src="js/site-clock.js"></script>
 
-        <!-- This goes on every page (site-footer) -->
-        <footer class="h-14 w-full">
-            <section class="relative flex items-center justify-between border-t-2 border-black py-3 mx-4">
-                <div id="dateTime" class="font-bold">
-                    <span>06.22.22 :: 12.59.59 P.M.</span>
-                </div>
-                <div>
-                    <ul class="social-links w-full flex">
-                        <li>
-                            <a href="#" class="block px-2 hover:bg-gray-400">
-                                <object data="img/icons/github-square-brands.svg" width="24" height="24"></object>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="block px-2 hover:bg-gray-400">
-                                <object data="img/icons/linkedin-brands.svg" width="24" height="24"></object>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </footer>
-    </body>
-    <script src="js/mobile-menu.js"></script>
 </html>
