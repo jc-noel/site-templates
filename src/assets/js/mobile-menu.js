@@ -7,7 +7,8 @@ const logo    = document.querySelector('#logo');
 
 menu.addEventListener('click', () => { 
     links.classList.toggle('hidden');
-    links.classList.toggle('bg-slate-100'); // for test
+    links.classList.toggle('bg-white'); // for test
+    links.classList.toggle('outline'); // for test
     topBar.classList.toggle('transform');
     topBar.classList.toggle('translate-y-2'); 
     topBar.classList.toggle('-rotate-45');
