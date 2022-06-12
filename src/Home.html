@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="output.css">
     </head>
 
-    <body class="flex h-screen flex-col items-center overflow-hidden" onload="startClock()">
+    <body class="flex h-screen flex-col overflow-hidden" onload="startClock()">
         <!-- This goes on every page (site-header) -->
         <header class="w-full flex flex-col">
             <!-- Site Navigation -->
@@ -42,7 +42,7 @@
             <!-- Profile Card: This only shows on homepage -->
             <section class="mx-4 border-b-2 border-black">
                 <div class="flex flex-row items-center justify-center gap-6 self-center p-3">
-                    <img src="assets/img/profile-placeholder.jpg" class="h-32 w-32 rounded-md"/>
+                    <img src="assets/img/profile-placeholder.jpg" class="h-32 w-32 rounded-sm"/>
                     <div class="h-28 flex flex-col justify-around">
                         <p class="text-xl font-medium text-gray-800">James Noel</p>
                         <p class="text-xs font-normal text-gray-600">High as a mother trucker.</p>
@@ -56,17 +56,82 @@
         </header>
 
         <!-- SAMPLE MAIN CONTENT -->
-        <main class="flex-1 overflow-y-scroll p-4 styled-scrollbars"></main>
+        <main class="flex-1 overflow-y-scroll mx-4 styled-scrollbars">
+
+            <!-- LATEST SECTION START-->
+            <section id="latest-section" class="mt-6">
+                <!-- Headline -->
+                <h1 class="text-2xl font-semibold">Latest</h1>
+                <!-- Latest Article's Container -->
+                <div class="flex flex-col mx-4 mt-6">
+                    <!-- Article 1 -->
+                    <article class="flex flex-col justify-around mb-6">
+                        <!-- Article Title -->
+                        <h2 class="text-xl font-medium">Blog Title</h2>
+                        <!-- Article Subtitle Container -->
+                        <div class="flex mt-2 text-sm border-b-2 border-black pb-2">
+                            <!-- Date -->
+                            <span class="mr-4">01/01/2022</span> |
+                            <!-- Category Tag Container -->
+                            <div class="ml-4 flex justify-around w-2/5">
+                                <!-- Category Tags for Article -->
+                                <a href="#">tag1</a>
+                                <span class="text-fuchsia-600">/</span>
+                                <a href="#">tag2</a>
+                                <span class="text-fuchsia-600">/</span>
+                                <a href="#">tag3</a>
+                            </div>
+                        </div>
+                        <!-- Article Excerpt -->
+                        <p class="text-xs font-normal mt-2 leading-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Pulvinar pellentesque amet, maecenas convallis cursus faucibus neque. 
+                            Nibh id pellentesque faucibus sem amet pellentesque feugiat quis magna. 
+                            Amet etiam vulputate purus sagittis, mauris odio enim etiam.
+                        </p>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="flex flex-col justify-around mb-6">
+                        <!-- Article Title -->
+                        <h2 class="text-xl font-medium">Blog Title</h2>
+                        <!-- Article Subtitle Container -->
+                        <div class="flex mt-2 text-sm border-b-2 border-black pb-2">
+                            <!-- Date -->
+                            <span class="mr-4">01/01/2022</span> |
+                            <!-- Category Tag Container -->
+                            <div class="ml-4 flex justify-around w-2/5">
+                                <!-- Category Tags for Article -->
+                                <a href="#">tag1</a>
+                                <span class="text-fuchsia-600">/</span>
+                                <a href="#">tag2</a>
+                                <span class="text-fuchsia-600">/</span>
+                                <a href="#">tag3</a>
+                            </div>
+                        </div>
+                        <!-- Article Excerpt -->
+                        <p class="text-xs font-normal mt-2 leading-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Pulvinar pellentesque amet, maecenas convallis cursus faucibus neque. 
+                            Nibh id pellentesque faucibus sem amet pellentesque feugiat quis magna. 
+                            Amet etiam vulputate purus sagittis, mauris odio enim etiam.
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <!-- LATEST SECTION END-->
+
+        </main>
         <!-- SAMPLE MAIN CONTENT END -->
 
         <!-- This goes on every page (site-footer) -->
         <footer class="h-14 w-full">
             <section class="relative flex items-center justify-between border-t-2 border-black py-3 mx-4">
                 <div id="dateTime" class="font-bold text-fuchsia-600">
-                    <span id="clockDate" class="text-black">06.22.22</span>
+                    <span id="clockDate" class="text-black"></span>
                     ::
                     <span id="clockTime" class="text-black"></span>
-                    PM
+                    <span id="clockMeridian"></span>
                 </div>
                 <div>
                     <ul class="social-links w-full flex">
