@@ -6,7 +6,7 @@ function startClock() {
     let day      = today.getDate();
     let month    = today.getMonth() + 1;
     let year     = today.getFullYear();
-    let meridian = hour >= 12 ? "PM" : "AM";
+    let meridian = today.toLocaleTimeString().substring(today.toLocaleTimeString().length - 2);
 
     hour   = padNum(hour);
     minute = padNum(minute);
