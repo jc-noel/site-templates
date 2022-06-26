@@ -41,17 +41,18 @@
         <!-- Site Navigation END -->
     </header>
 
-    <!-- SAMPLE MAIN CONTENT (classes are used for every main on each page) -->
+    <!-- MAIN CONTENT -->
     <main class="flex-1 overflow-y-scroll mx-4 styled-scrollbars">
 
         <!-- MAIN ARTICLE START-->
         <article class="flex flex-col justify-around">
-            <!-- Blog Posts Can Have Header Image (Both examples in this file)-->
+            
+            <!-- Header WITH HERO IMAGE -->
             <header class="flex flex-col items-center mt-6">
                 <!-- Hero Image -->
-                <img src="https://source.unsplash.com/random/340x180/?computer">
+                <img class="rounded-md h-60 w-full" src="https://source.unsplash.com/random/?computer">
                 <!-- Post Title & Subtitle -->
-                <div class="flex flex-col self-start ml-4 my-7 w-4/5">
+                <div class="flex flex-col self-start my-7 w-4/5">
                     <!-- Title -->
                     <h1 class="text-4xl font-medium">Blog Title</h1>
                     <!-- Subtitle Container -->
@@ -73,7 +74,7 @@
             </header>
 
             <!-- Header WITHOUT HERO IMAGE -->
-            <!-- <header class="flex flex-col mt-6 items-center">
+            <!-- <header class="flex flex-col my-8 items-center">
                 <div class="flex flex-col items-center w-full">
                     <h1 class="text-4xl font-medium">Blog Title</h1>
                     <div class="flex mt-4 font-normal w-4/5">
@@ -100,7 +101,7 @@
                     malesuada proin libero nunc consequat. Natoque penatibus et magnis dis. Amet justo donec enim diam
                     vulputate ut pharetra sit. Sit amet purus gravida quis blandit turpis. Turpis egestas pretium aenean
                     pharetra. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Laoreet sit amet
-                    cursus sit amet dictum. Habitant morbi tristique senectus et netus et malesuada fames ac.
+                    cursus sit amet dictum. Habitant morbi tristique senectus et netus et <a class="text-blue-600 underline" href="#">malesuada fames ac</a>.
                 </p>
                 <p class="mb-4">
                     Enim nec dui nunc mattis enim. Ac felis donec et odio pellentesque. Eget dolor morbi non arcu risus
@@ -126,38 +127,15 @@
                 </p>
             </main>
 
-            <!-- Pagination -->
-            <nav class="flex justify-between mx-4 mt-4">
-                <!-- Older post nav link with page back svg -->
-                <a href="#" class="flex items-center font-medium">
-                    <svg class="-ml-2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.5em"
-                        height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                        <path class="fill-current text-fuchsia-600"
-                            d="m16.293 17.707l1.414-1.414L13.414 12l4.293-4.293l-1.414-1.414L10.586 12zM7 6h2v12H7z" />
-                    </svg>
-                    Prev
-                </a>
-                <!-- Newer post nav link with page forward svg -->
-                <a href="#" class="flex items-center font-medium ml-2">
-                    Next
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.5em" height="1.5em"
-                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                        <path class="fill-current text-fuchsia-600"
-                            d="M7.707 17.707L13.414 12L7.707 6.293L6.293 7.707L10.586 12l-4.293 4.293zM15 6h2v12h-2z" />
-                    </svg>
-                </a>
-            </nav>
-
         </article>
         <!-- MAIN ARTICLE END-->
 
         <!-- RELATED SECTION START-->
         <section id="latest-blog-section" class="mt-6">
-            <!-- Main Blog Page Headline -->
-            <h3 class="text-3xl font-medium p-4">Related</h3>
-            <!-- Latest Article's Container -->
+            <!-- Related Articles Headline -->
+            <h3 class="-ml-4 text-3xl font-medium p-4">Related</h3>
+            <!-- Related Article's Container -->
             <div class="flex flex-col mx-4 mt-4">
-
                 <!-- Related Article 1 -->
                 <article class="flex flex-col justify-around mb-6">
                     <!-- Article Title -->
@@ -215,27 +193,27 @@
         </section>
         <!-- RELATED SECTION END -->
 
-        <!-- CATEGORY SECTION START (ON EVERY PAGE BUT HOME) -->
-        <section id="category-cloud" class="mt-6">
-            <!-- Category Cloud Headline -->
-            <h2 class="text-center text-2xl font-medium"><a href="#">Categories</a></h2>
+        <!-- TAG SECTION START (ON EVERY PAGE BUT HOME) -->
+        <section id="tag-cloud" class="mt-6">
+            <!-- Tag Cloud Headline -->
+            <h2 class="text-center text-2xl font-medium"><a href="#">Tags</a></h2>
             <hr class="mt-3 border-black w-1/2 mx-auto">
             <!-- Tag Cloud Container -->
             <div class="grid text-center grid-cols-4 gap-3 m-8">
-                <a href="#" class="bg-slate-200 py-1 rounded-sm">HTML</a>
-                <a href="#" class="bg-slate-200 py-1 rounded-sm">PHP</a>
-                <a href="#" class="bg-slate-200 py-1 rounded-sm">C#</a>
-                <a href="#" class="bg-slate-200 py-1 rounded-sm">WP</a>
-                <a href="#" class="bg-slate-200 py-1 rounded-sm">DESIGN</a>
-                <a href="#" class="bg-slate-200 py-1 rounded-sm">C#</a>
-                <a href="#" class="bg-slate-200 py-1 rounded-sm">WP</a>
-                <a href="#" class="bg-slate-200 py-1 rounded-sm">HTML</a>
-                <a href="#" class="bg-slate-200 py-1 rounded-sm">PHP</a>
-                <a href="#" class="bg-slate-200 py-1 rounded-sm">C#</a>
-                <a href="#" class="bg-slate-200 py-1 rounded-sm">WP</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">HTML</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">PHP</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">C#</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">WP</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">DESIGN</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">C#</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">WP</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">HTML</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">PHP</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">C#</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">WP</a>
             </div>
         </section>
-        <!-- CATEGORY SECTION END-->
+        <!-- TAG SECTION END-->
 
     </main>
 
