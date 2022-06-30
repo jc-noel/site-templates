@@ -10,6 +10,7 @@
 .styled-scrollbars::-webkit-scrollbar {
     width: 6px;
     /* Mostly for vertical scrollbars */
+    height: 6px;
 }
 
 .styled-scrollbars::-webkit-scrollbar-thumb {

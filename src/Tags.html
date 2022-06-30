@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Home | jcnoel.dev</title>
+    <title>Tag Name | jcnoel.dev</title>
     <link rel="stylesheet" href="output.css">
 </head>
 
@@ -28,10 +28,10 @@
                     <a href="#" class="block p-5 hover:bg-gray-400">About</a>
                 </li>
                 <li>
-                    <a href="Blog.html" class="block p-5 hover:bg-gray-400 bg-gray-100">Blog</a>
+                    <a href="Blog.html" class="block p-5 hover:bg-gray-400">Blog</a>
                 </li>
                 <li>
-                    <a href="#" class="block p-5 hover:bg-gray-400">Works</a>
+                    <a href="Projects.html" class="block p-5 hover:bg-gray-400">Projects</a>
                 </li>
                 <li>
                     <a href="#" class="block p-5 hover:bg-gray-400">Gallery</a>
@@ -43,15 +43,15 @@
 
     <main class="flex-1 overflow-y-scroll mx-4 styled-scrollbars">
 
+        <!-- Selected Tag Headline -->
+        <h1 class="text-4xl font-semibold text-center p-4 mt-6">Selected Tag</h1>
+
         <!-- SELECTED TAG POSTS SECTION START-->
         <section id="selected-tag-blog-section" class="mt-6">
-            <!-- Selected Tag Headline -->
-            <h1 class="text-4xl font-semibold text-center p-4">Selected Tag</h1>
             <!-- Selected Tag Article's Container -->
             <div class="flex flex-col mx-4 mt-6">
-
                 <!-- Newest Article with this Tag Example -->
-                <article class="flex flex-col justify-around mb-6">
+                <article class="flex flex-col justify-around mb-4">
                     <!-- Article Title & Pin Container -->
                     <div class="flex items-center">
                         <!-- Article Title -->
@@ -90,7 +90,7 @@
                 </article>
 
                 <!-- Next Newest Article -->
-                <article class="flex flex-col justify-around mb-6">
+                <article class="flex flex-col justify-around mb-4">
                     <!-- Article Title -->
                     <h2 class="text-xl font-medium">
                         <a href="#">Blog Title</a>
@@ -118,26 +118,12 @@
                     </p>
                 </article>
 
-                <!-- See More Articles With This Tag -->
-                <nav class="flex justify-end">
-                    <a href="#" class="flex items-center font-medium ml-2">
-                        See More
-                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.5em"
-                            height="1.5em" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
-                            <path class="fill-current text-fuchsia-600"
-                                d="M7.707 17.707L13.414 12L7.707 6.293L6.293 7.707L10.586 12l-4.293 4.293zM15 6h2v12h-2z" />
-                        </svg>
-                    </a>
-                </nav>
-
             </div>
         </section>
         <!-- SELECTED TAG POSTS SECTION END -->
 
         <!-- SELECTED TAG GALLERY SECTION START-->
-        <section id="selected-tag-gallery-section" class="my-8">
-            <!-- Headline Links to Main Gallery Page -->
-            <h2 class="text-2xl font-semibold text-center"><a href="#">From the Gallery</a></h2>
+        <section id="selected-tag-gallery-section" class="mt-6">
             <!-- Selected Tag Article's Container -->
             <div class="grid gap-2 grid-cols-3 grid-rows-2 mx-4 my-6">
                 <a href="#"><img src="https://source.unsplash.com/random/100x100/?computer"></a>
@@ -147,19 +133,50 @@
                 <a href="#"><img src="https://source.unsplash.com/random/100x100/?foot"></a>
                 <a href="#"><img src="https://source.unsplash.com/random/100x100/?hand"></a>
             </div>
-            <!-- See More From Gallery With This Tag -->
-            <nav class="flex justify-end mr-4">
-                <a href="#" class="flex items-center font-medium ml-2">
-                    See More
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.5em" height="1.5em"
-                        preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
-                        <path class="fill-current text-fuchsia-600"
-                            d="M7.707 17.707L13.414 12L7.707 6.293L6.293 7.707L10.586 12l-4.293 4.293zM15 6h2v12h-2z" />
-                    </svg>
-                </a>
-            </nav>
         </section>
         <!-- SELECTED TAG GALLERY SECTION END -->
+
+        <!-- SELECTED TAG PROJECT SECTION START -->
+        <section id="selected-tag-project-section" class="mt-6">
+            <!-- Project 1 w/img -->
+            <div class="flex flex-col mx-4 my-4 bg-slate-100">
+                <!-- Project Card Container -->
+                <div class="flex justify-start">
+                    <!-- Project Card Img -->
+                    <img src="https://source.unsplash.com/random/96x96/?program" />
+                    <!-- Project Card Details Container -->
+                    <div class="ml-4 flex flex-col p-2">
+                        <!-- Project Card Details -->
+                        <p class="font-bold">Application Name</p>
+                        <p>Short Description</p>
+                        <p class="text-fuchsia-600">Framework</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 w/img & w/tags -->
+            <div class="flex flex-col mx-4 my-4 bg-slate-100">
+                <!-- Project Card Container -->
+                <div class="flex justify-start">
+                    <!-- Project Card Img -->
+                    <img src="https://source.unsplash.com/random/96x96/?tshirt" />
+                    <!-- Project Card Details Container -->
+                    <div class="ml-4 flex flex-col p-2">
+                        <!-- Project Card Details -->
+                        <p class="font-bold">T-Shirt Design</p>
+                        <p>Short Description</p>
+                        <!-- Project Card Tags Container -->
+                        <div class="flex justify-between w-2/3">
+                            <!-- Project Card Tags -->
+                            <a href="Tags.html">tag1</a>
+                            <span class="text-fuchsia-600">/</span>
+                            <a href="Tags.html">tag2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SELECTED TAG PROJECT SECTION END -->
 
         <!-- TAG SECTION START (ON EVERY PAGE BUT HOME) -->
         <section id="tag-cloud" class="mt-6">

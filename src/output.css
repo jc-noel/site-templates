@@ -621,6 +621,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -671,16 +676,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.75rem;
 }
 
-.-ml-2 {
-  margin-left: -0.5rem;
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .ml-2 {
   margin-left: 0.5rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
+.-ml-2 {
+  margin-left: -0.5rem;
 }
 
 .mt-0 {
@@ -709,6 +714,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-7 {
   margin-bottom: 1.75rem;
+}
+
+.-ml-6 {
+  margin-left: -1.5rem;
+}
+
+.-ml-8 {
+  margin-left: -2rem;
 }
 
 .block {
@@ -875,6 +888,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-w-full {
   min-width: 100%;
+}
+
+.min-w-min {
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+}
+
+.max-w-prose {
+  max-width: 65ch;
+}
+
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .flex-1 {
@@ -1091,19 +1118,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-fuchsia-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(192 38 211 / var(--tw-border-opacity));
+}
+
+.border-opacity-70 {
+  --tw-border-opacity: 0.7;
+}
+
+.border-opacity-30 {
+  --tw-border-opacity: 0.3;
+}
+
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
 .bg-slate-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-slate-100 {
@@ -1171,6 +1211,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-7 {
   padding: 1.75rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .py-3 {
@@ -1329,6 +1373,18 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-line: underline;
 }
 
+.underline-offset-4 {
+  text-underline-offset: 4px;
+}
+
+.underline-offset-1 {
+  text-underline-offset: 1px;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
 .opacity-30 {
   opacity: 0.3;
 }
@@ -1366,6 +1422,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .styled-scrollbars::-webkit-scrollbar {
   width: 6px;
   /* Mostly for vertical scrollbars */
+  height: 6px;
 }
 
 .styled-scrollbars::-webkit-scrollbar-thumb {

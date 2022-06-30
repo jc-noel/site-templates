@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Home | jcnoel.dev</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="flex h-screen flex-col overflow-hidden" onload="startClock()">
+    <!-- This goes on every page (site-header) -->
+    <header class="w-full flex flex-col">
+        <!-- Site Navigation -->
+        <nav class="relative flex items-center justify-between border-b-2 border-black py-3 mx-4">
+            <div id="logo" class="font-bold">
+                <a href="Home.html">JCN</a>
+            </div>
+            <!-- Mobile Menu Icon -->
+            <div class="menu">
+                <div class="topBar my-1.5 h-0.5 w-7 bg-gray-800 duration-300"></div>
+                <div class="midBar my-1.5 h-0.5 w-7 bg-gray-800"></div>
+                <div class="lowBar my-1.5 h-0.5 w-7 bg-gray-800 duration-300"></div>
+            </div>
+            <!-- Mobile/Main Dropdown/Top Menu "toggle hidden class" -->
+            <ul class="links absolute top-14 hidden w-full flex-col text-right">
+                <li>
+                    <a href="#" class="block p-5 hover:bg-gray-400">About</a>
+                </li>
+                <li>
+                    <a href="Blog.html" class="block p-5 hover:bg-gray-400">Blog</a>
+                </li>
+                <li>
+                    <a href="Projects.html" class="block p-5 hover:bg-gray-400 bg-gray-100">Projects</a>
+                </li>
+                <li>
+                    <a href="#" class="block p-5 hover:bg-gray-400">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Site Navigation END -->
+    </header>
+
+    <!-- SAMPLE MAIN CONTENT (classes are used for every main on each page) -->
+    <main class="flex-1 overflow-y-scroll mx-4 styled-scrollbars">
+
+        <h1 class="text-4xl font-semibold text-center p-4 mt-6">Projects</h1>
+
+        <section id="featured-project-section" class="mt-6">
+
+            <!-- Project 1 w/img -->
+            <a href="Project-Post.html">
+                <div class="flex flex-col mb-2 bg-slate-100">
+                    <!-- Project Card Container -->
+                    <div class="flex justify-start">
+                        <!-- Project Card Img -->
+                        <img src="https://source.unsplash.com/random/96x96/?program" />
+                        <!-- Project Card Details Container -->
+                        <div class="ml-4 flex flex-col p-2">
+                            <!-- Project Card Details -->
+                            <p class="font-bold">Application Name</p>
+                            <p>Short Description</p>
+                            <p class="text-fuchsia-600">Framework</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 2 w/img & w/tags -->
+            <div class="flex flex-col mb-2 bg-slate-100">
+                <!-- Project Card Container -->
+                <div class="flex justify-start">
+                    <!-- Project Card Img -->
+                    <img src="https://source.unsplash.com/random/96x96/?tshirt" />
+                    <!-- Project Card Details Container -->
+                    <div class="ml-4 flex flex-col p-2">
+                        <!-- Project Card Details -->
+                        <p class="font-bold">T-Shirt Design</p>
+                        <p>Short Description</p>
+                        <!-- Project Card Tags Container -->
+                        <div class="flex justify-between w-2/3">
+                            <!-- Project Card Tags -->
+                            <a href="Tags.html">tag1</a>
+                            <span class="text-fuchsia-600">/</span>
+                            <a href="Tags.html">tag2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 w/o img -->
+            <div class="flex flex-col mb-2 bg-slate-100">
+                <!-- Project Card Container -->
+                <div class="flex justify-start">
+                    <!-- Project Card Details Container -->
+                    <div class="ml-4 flex flex-col p-2">
+                        <!-- Project Card Details -->
+                        <p class="font-bold">Bring To Mouse</p>
+                        <p>Short Description</p>
+                        <p class="text-fuchsia-600">Framework</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 w/o img -->
+            <div class="flex flex-col mb-2 bg-slate-100">
+                <!-- Project Card Container -->
+                <div class="flex justify-start">
+                    <!-- Project Card Details Container -->
+                    <div class="ml-4 flex flex-col p-2">
+                        <!-- Project Card Details -->
+                        <p class="font-bold">Application Name</p>
+                        <p>Short Description</p>
+                        <p class="text-fuchsia-600">Framework</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 w/img & w/tags -->
+            <div class="flex flex-col mb-2 bg-slate-100">
+                <!-- Project Card Container -->
+                <div class="flex justify-start">
+                    <!-- Project Card Img -->
+                    <img src="https://source.unsplash.com/random/96x96/?poster" />
+                    <!-- Project Card Details Container -->
+                    <div class="ml-4 flex flex-col p-2">
+                        <!-- Project Card Details -->
+                        <p class="font-bold">Poster Design</p>
+                        <p>Short Description</p>
+                        <!-- Project Card Tags Container -->
+                        <div class="flex justify-between w-2/3">
+                            <!-- Project Card Tags -->
+                            <a href="Tags.html">tag1</a>
+                            <span class="text-fuchsia-600">/</span>
+                            <a href="Tags.html">tag2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- FEATURED PROJECTS SECTION END -->
+
+        <!-- TAG SECTION START (ON EVERY PAGE BUT HOME) -->
+        <section id="tag-cloud" class="mt-6">
+            <!-- TAG Cloud Headline -->
+            <h2 class="text-center text-2xl font-medium">
+                <a href="#">Tags</a>
+            </h2>
+            <hr class="mt-3 border-black w-1/2 mx-auto">
+            <!-- Tag Cloud Container -->
+            <div class="grid text-center grid-cols-4 gap-3 m-8">
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">HTML</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">PHP</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">C#</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">WP</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">DESIGN</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">C#</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">WP</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">HTML</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">PHP</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">C#</a>
+                <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">WP</a>
+            </div>
+        </section>
+        <!-- CATEGORY SECTION END-->
+
+    </main>
+
+    <!-- This goes on every page (site-footer) -->
+    <footer class="h-14 w-full">
+        <section class="relative flex items-center justify-between border-t-2 border-black py-3 mx-4">
+            <div class="font-bold text-fuchsia-600">
+                <span id="clockDate" class="text-black"></span>
+                ::
+                <span id="clockTime" class="text-black"></span>
+                <span id="clockMeridian"></span>
+            </div>
+            <div>
+                <ul class="social-links w-full flex">
+                    <li>
+                        <a href="#" class="block px-2">
+                            <object data="assets/img/icons/github-square-brands.svg" width="24" height="24"
+                                class="hover:bg-gray-400"></object>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-2">
+                            <object data="assets/img/icons/linkedin-brands.svg" width="24" height="24"
+                                class="hover:bg-gray-400"></object>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+</body>
+<script src="assets/js/mobile-menu.js"></script>
+<script src="assets/js/site-clock.js"></script>
+
+</html>
