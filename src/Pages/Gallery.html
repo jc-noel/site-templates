@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Title | jcnoel.dev</title>
-    <link rel="stylesheet" href="output.css">
+    <title>Gallery Home | jcnoel.dev</title>
+    <link rel="stylesheet" href="../output.css">
 </head>
 
 <body class="flex h-screen flex-col overflow-hidden" onload="startClock()">
@@ -34,64 +34,44 @@
                     <a href="Projects.html" class="block p-5 hover:bg-gray-400">Projects</a>
                 </li>
                 <li>
-                    <a href="Gallery.html" class="block p-5 hover:bg-gray-400">Gallery</a>
+                    <a href="Gallery.html" class="block p-5 hover:bg-gray-400 bg-gray-100">Gallery</a>
                 </li>
             </ul>
         </nav>
         <!-- Site Navigation END -->
     </header>
 
-    <!-- MAIN CONTENT -->
+    <!-- SAMPLE MAIN CONTENT (classes are used for every main on each page) -->
     <main class="flex-1 overflow-y-scroll mx-4 styled-scrollbars">
 
-        <!-- MAIN ARTICLE START-->
-        <article class="flex flex-col justify-around">
-            
-            <!-- Header WITH HERO IMAGE -->
-            <header class="flex flex-col items-center mt-6">
-                <!-- Title -->
-                <h1 class="text-4xl font-medium mb-8">Image Title</h1>
-                <!-- Hero Image -->
-                <img class="rounded-md h-60 w-full" src="https://source.unsplash.com/random/?computer">
-                <!-- Post Title & Subtitle -->
-                <div class="flex flex-col self-start mt-2 mb-4 w-4/5">
-                    
-                    <!-- Subtitle Container -->
-                    <div class="flex mt-4 font-normal">
-                        <!-- Date -->
-                        <span class="mr-4">01/01/2022</span>
-                        |
-                        <!-- Category Tag Container -->
-                        <div class="ml-4 flex justify-around w-1/2">
-                            <!-- Category Tags for Article -->
-                            <a href="Tags.html">tag1</a>
-                            <span class="text-fuchsia-600">/</span>
-                            <a href="Tags.html">tag2</a>
-                            <span class="text-fuchsia-600">/</span>
-                            <a href="Tags.html">tag3</a>
-                        </div>
-                    </div>
-                </div>
-            </header>
+        <h1 class="text-4xl font-semibold text-center p-4 mt-6">Gallery</h1>
 
-            <main class="flex flex-col text-sm font-normal leading-6">
-                <p class="mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Suspendisse sed nisi lacus sed viverra tellus in. Aliquet porttitor lacus
-                    luctus accumsan tortor posuere ac ut consequat. In metus vulputate eu scelerisque felis imperdiet
-                    proin fermentum leo. Duis at tellus at urna condimentum mattis. Diam donec adipiscing tristique
-                    risus. Risus nullam eget felis eget nunc lobortis mattis aliquam. Sapien et ligula ullamcorper
-                    malesuada proin libero nunc consequat. Natoque penatibus et magnis dis. Amet justo donec enim diam
-                    vulputate ut pharetra sit. Sit amet purus gravida <a class="text-blue-600 underline" href="#">malesuada fames ac</a>.
-                </p>
-            </main>
-        </article>
-        <!-- MAIN ARTICLE END-->
+        <section id="featured-gallery-section" class="mt-6">
+
+            <div class="grid gap-2 grid-cols-3 grid-rows-4 mx-4 mt-6">
+                <a href="Gallery-Post.html"><img src="https://source.unsplash.com/random/100x100"></a>
+                <a href="Gallery-Post.html"><img src="https://source.unsplash.com/random/100x100"></a>
+                <a href="Gallery-Post.html"><img src="https://source.unsplash.com/random/100x100"></a>
+                <a href="Gallery-Post.html"><img src="https://source.unsplash.com/random/100x100"></a>
+                <a href="Gallery-Post.html"><img src="https://source.unsplash.com/random/100x100"></a>
+                <a href="Gallery-Post.html"><img src="https://source.unsplash.com/random/100x100"></a>
+                <a href="Gallery-Post.html"><img src="https://source.unsplash.com/random/100x100"></a>
+                <a href="Gallery-Post.html"><img src="https://source.unsplash.com/random/100x100"></a>
+                <a href="Gallery-Post.html"><img src="https://source.unsplash.com/random/100x100"></a>
+                <a href="Gallery-Post.html"><img src="https://source.unsplash.com/random/100x100"></a>
+                <a href="Gallery-Post.html"><img src="https://source.unsplash.com/random/100x100"></a>
+                <a href="Gallery-Post.html"><img src="https://source.unsplash.com/random/100x100"></a>
+            </div>
+
+        </section>
+        <!-- FEATURED PROJECTS SECTION END -->
 
         <!-- TAG SECTION START (ON EVERY PAGE BUT HOME) -->
         <section id="tag-cloud" class="mt-6">
-            <!-- Tag Cloud Headline -->
-            <h2 class="text-center text-2xl font-medium"><a href="#">Tags</a></h2>
+            <!-- TAG Cloud Headline -->
+            <h2 class="text-center text-2xl font-medium">
+                <a href="#">Tags</a>
+            </h2>
             <hr class="mt-3 border-black w-1/2 mx-auto">
             <!-- Tag Cloud Container -->
             <div class="grid text-center grid-cols-4 gap-3 m-8">
@@ -108,7 +88,7 @@
                 <a href="Tags.html" class="bg-slate-200 py-1 rounded-sm">WP</a>
             </div>
         </section>
-        <!-- TAG SECTION END-->
+        <!-- CATEGORY SECTION END-->
 
     </main>
 
@@ -125,13 +105,13 @@
                 <ul class="social-links w-full flex">
                     <li>
                         <a href="#" class="block px-2">
-                            <object data="assets/img/icons/github-square-brands.svg" width="24" height="24"
+                            <object data="../assets/img/icons/github-square-brands.svg" width="24" height="24"
                                 class="hover:bg-gray-400"></object>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="block px-2">
-                            <object data="assets/img/icons/linkedin-brands.svg" width="24" height="24"
+                            <object data="../assets/img/icons/linkedin-brands.svg" width="24" height="24"
                                 class="hover:bg-gray-400"></object>
                         </a>
                     </li>
@@ -141,7 +121,7 @@
     </footer>
 
 </body>
-<script src="assets/js/mobile-menu.js"></script>
-<script src="assets/js/site-clock.js"></script>
+<script src="../assets/js/mobile-menu.js"></script>
+<script src="../assets/js/site-clock.js"></script>
 
 </html>

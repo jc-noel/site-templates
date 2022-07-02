@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title | jcnoel.dev</title>
-    <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/atom-one-dark.min.css">
+    <title>Blog Title | jcnoel.dev</title>
+    <link rel="stylesheet" href="../output.css">
 </head>
 
 <body class="flex h-screen flex-col overflow-hidden" onload="startClock()">
@@ -47,26 +46,35 @@
 
         <!-- MAIN ARTICLE START-->
         <article class="flex flex-col justify-around">
-
-            <!-- Header WITHOUT HERO IMAGE -->
-            <header class="flex flex-col my-8 items-center">
-                <div class="flex flex-col items-center w-full">
-                    <h1 class="text-4xl font-medium p-4">Project Title</h1>
-                    <div class="flex mt-4 font-normal w-4/5">
+            
+            <!-- Header WITH HERO IMAGE -->
+            <header class="flex flex-col items-center mt-6">
+                <!-- Title -->
+                <h1 class="text-4xl font-medium mb-8">Image Title</h1>
+                <!-- Hero Image -->
+                <img class="rounded-md h-60 w-full" src="https://source.unsplash.com/random/?computer">
+                <!-- Post Title & Subtitle -->
+                <div class="flex flex-col self-start mt-2 mb-4 w-4/5">
+                    
+                    <!-- Subtitle Container -->
+                    <div class="flex mt-4 font-normal">
+                        <!-- Date -->
                         <span class="mr-4">01/01/2022</span>
                         |
-                        <div class="ml-4 flex justify-around w-3/5">
-                            <a href="#">tag1</a>
+                        <!-- Category Tag Container -->
+                        <div class="ml-4 flex justify-around w-1/2">
+                            <!-- Category Tags for Article -->
+                            <a href="Tags.html">tag1</a>
                             <span class="text-fuchsia-600">/</span>
-                            <a href="#">tag2</a>
+                            <a href="Tags.html">tag2</a>
                             <span class="text-fuchsia-600">/</span>
-                            <a href="#">tag3</a>
+                            <a href="Tags.html">tag3</a>
                         </div>
                     </div>
                 </div>
             </header>
 
-            <main class="flex flex-col mx-4 text-sm font-normal leading-6">
+            <main class="flex flex-col text-sm font-normal leading-6">
                 <p class="mb-4">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Suspendisse sed nisi lacus sed viverra tellus in. Aliquet porttitor lacus
@@ -74,79 +82,11 @@
                     proin fermentum leo. Duis at tellus at urna condimentum mattis. Diam donec adipiscing tristique
                     risus. Risus nullam eget felis eget nunc lobortis mattis aliquam. Sapien et ligula ullamcorper
                     malesuada proin libero nunc consequat. Natoque penatibus et magnis dis. Amet justo donec enim diam
-                    vulputate ut pharetra sit. Sit amet purus gravida quis blandit turpis. Turpis egestas pretium aenean
-                    pharetra. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Laoreet sit amet
-                    cursus sit amet dictum. Habitant morbi tristique senectus et netus et <a
-                        class="text-blue-600 underline" href="#">malesuada fames ac</a>.
+                    vulputate ut pharetra sit. Sit amet purus gravida <a class="text-blue-600 underline" href="#">malesuada fames ac</a>.
                 </p>
-                <pre>
-                    <code class="border border-fuchsia-600 styled-scrollbars">
-{
-    "name": "templates",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "start": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "tailwindcss": "^3.0.24"
-    }
-}
-                        </code>
-                    </pre>
             </main>
-
         </article>
         <!-- MAIN ARTICLE END-->
-
-        <!-- RELATED SECTION START-->
-        <section id="related-blog-section" class="mt-6">
-            <!-- Related Articles Headline -->
-            <h3 class="-ml-4 text-3xl font-medium p-4">Related</h3>
-            <!-- Related Article's Container -->
-            <div class="flex flex-col mx-4 mt-4">
-                <!-- Project 2 w/img & w/tags -->
-                <div class="flex flex-col mb-2 bg-slate-100">
-                    <!-- Project Card Container -->
-                    <div class="flex justify-start">
-                        <!-- Project Card Img -->
-                        <img src="https://source.unsplash.com/random/96x96/?tshirt" />
-                        <!-- Project Card Details Container -->
-                        <div class="ml-4 flex flex-col p-2">
-                            <!-- Project Card Details -->
-                            <p class="font-bold">T-Shirt Design</p>
-                            <p>Short Description</p>
-                            <!-- Project Card Tags Container -->
-                            <div class="flex justify-between w-2/3">
-                                <!-- Project Card Tags -->
-                                <a href="Tags.html">tag1</a>
-                                <span class="text-fuchsia-600">/</span>
-                                <a href="Tags.html">tag2</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 w/o img -->
-                <div class="flex flex-col mb-2 bg-slate-100">
-                    <!-- Project Card Container -->
-                    <div class="flex justify-start">
-                        <!-- Project Card Details Container -->
-                        <div class="ml-4 flex flex-col p-2">
-                            <!-- Project Card Details -->
-                            <p class="font-bold">Bring To Mouse</p>
-                            <p>Short Description</p>
-                            <p class="text-fuchsia-600">Framework</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- RELATED SECTION END -->
 
         <!-- TAG SECTION START (ON EVERY PAGE BUT HOME) -->
         <section id="tag-cloud" class="mt-6">
@@ -185,13 +125,13 @@
                 <ul class="social-links w-full flex">
                     <li>
                         <a href="#" class="block px-2">
-                            <object data="assets/img/icons/github-square-brands.svg" width="24" height="24"
+                            <object data="../assets/img/icons/github-square-brands.svg" width="24" height="24"
                                 class="hover:bg-gray-400"></object>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="block px-2">
-                            <object data="assets/img/icons/linkedin-brands.svg" width="24" height="24"
+                            <object data="../assets/img/icons/linkedin-brands.svg" width="24" height="24"
                                 class="hover:bg-gray-400"></object>
                         </a>
                     </li>
@@ -201,9 +141,7 @@
     </footer>
 
 </body>
-<script src="assets/js/mobile-menu.js"></script>
-<script src="assets/js/site-clock.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
-<script>hljs.highlightAll()</script>
+<script src="../assets/js/mobile-menu.js"></script>
+<script src="../assets/js/site-clock.js"></script>
 
 </html>
