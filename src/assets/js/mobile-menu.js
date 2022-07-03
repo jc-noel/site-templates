@@ -7,13 +7,20 @@ const logo    = document.querySelector('#logo');
 
 menu.addEventListener('click', () => { 
     links.classList.toggle('hidden');
-    links.classList.toggle('bg-white'); // for test
-    links.classList.toggle('outline'); // for test
+    links.classList.toggle('bg-white');
+    links.classList.toggle('outline');
+
     topBar.classList.toggle('transform');
     topBar.classList.toggle('translate-y-2'); 
     topBar.classList.toggle('-rotate-45');
+
     midBar.classList.toggle('invisible');
+
     lowBar.classList.toggle('transform');
     lowBar.classList.toggle('-translate-y-2');        
     lowBar.classList.toggle('rotate-45');
+    lowBar.classList.toggle('w-3');
+    lowBar.classList.toggle('w-7');
+    lowBar.classList.toggle('ml-4');
+
 });
