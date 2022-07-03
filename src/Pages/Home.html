@@ -10,31 +10,31 @@
 
 <body class="flex h-screen flex-col overflow-hidden" onload="startClock()">
     <!-- This goes on every page (site-header) -->
-    <header class="w-full sm:w-4/5 sm:mx-auto flex flex-col">
+    <header class="w-full flex flex-col">
         <!-- Site Navigation -->
-        <nav class="relative flex items-center justify-between border-b-2 border-black py-3 sm:py-0 mx-4">
-            <div id="logo" class="font-bold sm:text-2xl sm:p-5">
+        <nav class="relative flex items-center justify-between border-b-2 border-black py-3 mx-4">
+            <div id="logo" class="font-bold">
                 <a href="Home.html">JCN</a>
             </div>
             <!-- Mobile Menu Icon -->
-            <div class="menu sm:hidden">
+            <div class="menu">
                 <div class="topBar my-1.5 h-0.5 w-7 bg-gray-800 duration-300"></div>
                 <div class="midBar my-1.5 h-0.5 w-7 bg-gray-800"></div>
                 <div class="lowBar my-1.5 h-0.5 w-7 bg-gray-800 duration-300"></div>
             </div>
             <!-- Mobile/Main Dropdown/Top Menu "toggle hidden class" -->
-            <ul class="sm:justify-between sm:text-lg sm:items-center links absolute sm:static top-14 hidden w-full sm:w-1/3  sm:flex flex-col sm:flex-row text-right">
+            <ul class="links absolute top-14 hidden w-full flex-col text-right">
                 <li>
-                    <a href="About.html" class="block sm:inline-block hover:bg-gray-400">About</a>
+                    <a href="About.html" class="block p-5 hover:bg-gray-400">About</a>
                 </li>
                 <li>
-                    <a href="Blog.html" class="block sm:inline-block hover:bg-gray-400">Blog</a>
+                    <a href="Blog.html" class="block p-5 hover:bg-gray-400">Blog</a>
                 </li>
                 <li>
-                    <a href="Projects.html" class="block sm:inline-block hover:bg-gray-400">Projects</a>
+                    <a href="Projects.html" class="block p-5 hover:bg-gray-400">Projects</a>
                 </li>
                 <li>
-                    <a href="Gallery.html" class="block sm:inline-block hover:bg-gray-400">Gallery</a>
+                    <a href="Gallery.html" class="block p-5 hover:bg-gray-400">Gallery</a>
                 </li>
             </ul>
         </nav>
