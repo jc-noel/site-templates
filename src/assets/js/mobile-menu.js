@@ -9,6 +9,7 @@ menu.addEventListener('click', () => {
     links.classList.toggle('hidden');
     links.classList.toggle('bg-white');
     links.classList.toggle('outline');
+    links.classList.toggle('outline-2');
 
     topBar.classList.toggle('transform');
     topBar.classList.toggle('translate-y-2'); 
